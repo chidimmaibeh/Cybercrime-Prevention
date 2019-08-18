@@ -1,0 +1,184 @@
+.floating-left {
+  float: left;
+}
+/*global*/
+body {
+  margin: 0px;
+  padding: 0px;
+}
+h1 {
+  text-align: center;
+}
+hr {
+  clear: both;
+  color: black;
+  font-weight: bold;
+}
+header {
+  display: flex;
+}
+footer,
+section {
+  width: 96%;
+  margin: 0 auto;
+  display: inherit;
+}
+/*header*/
+main {
+  width: 100%;
+  float: left;
+  background-color: #1DA2DB;
+  margin-bottom: 40px;
+  border-bottom: 2px solid black;
+}
+.container {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  text-align: center;
+}
+.logo {
+  float: left;
+  width: 30%;
+  text-align: center;
+}
+.menu {
+  float: left;
+  width: 70%;
+}
+header a {
+  color: white;
+  font-size: 17px;
+}
+header a:hover {
+  color: #bbbaba;
+}
+.logo img {
+  width: 100px;
+}
+.menu ul li {
+  list-style: none;
+  float: left;
+  margin: 30px 18px;
+}
+img {
+  max-width: 100%;
+}
+/*form*/
+form {
+  margin-bottom: 100px;
+}
+.form_1 {
+  margin: 20px;
+  text-align: center;
+}
+.form_1 label {
+  width: 100px;
+  display: inline-block;
+  text-align: right;
+  margin-right: 10px;
+}
+/*button*/
+button {
+  background-color: #FFA500;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  padding: 12px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+.button {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 30px;
+}
+.button_1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+/*27.3% Grid*/
+.boxes {
+  width: 100%;
+  float: left;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.box {
+  width: 27.33%;
+  float: left;
+  text-align: center;
+  margin: 3%;
+  font-size: 17px;
+}
+.img_1 {
+  width: 100px;
+  height: 100px;
+}
+/* 50% Grid*/
+.w50 {
+  width: 50%;
+  float: left;
+  text-align: center;
+  margin-bottom: 200px;
+  margin-top: 100px;
+}
+.w50 img {
+  width: 45%;
+  margin: 20px;
+}
+/*footer*/
+footer {
+  background-color: #1DA2DB;
+  width: 90%;
+  padding: 0 5%;
+  float: left;
+}
+.footer {
+  width: 100%;
+  float: left;
+  margin-top: 100px;
+}
+.foot {
+  width: 25%;
+  float: left;
+  text-align: center;
+}
+ul li {
+  list-style: none;
+}
+ul li a {
+  text-decoration: none;
+  color: white;
+}
+/*hamburger menu*/
+.menu img {
+  display: none;
+}
+@media (max-width: 1024px) {
+  .box {
+    width: 90%;
+    margin: 5%;
+  }
+  .foot {
+    width: 100%;
+  }
+  .menu ul li {
+    margin: 5px 0px;
+    width: 100%;
+  }
+  .container {
+    margin-bottom: 100px;
+  }
+  .w50 {
+    width: 100%;
+  }
+  .menu ul {
+    display: none;
+  }
+  .menu img {
+    display: block;
+    float: right;
+    margin-right: 15px;
+  }
+}

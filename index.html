@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cybercrime Prevention</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Cybercrime Support Network">
+    <meta name="keywords" content="cybercrime, fraud, scam, crime, cybersecurity">
+    <meta name="author" content="Chidimma Ibeh">
+    <link rel="stylesheet/less" type="text/css" href="css/styles.less" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.0.1/mustache.min.js" ></script>
+    <!-- link rel="stylesheet" type="text/css" href="css/styles.css" -->
+    <script>
+      $(document).ready(function () {
+        $.getJSON('data.json', function(data) {
+          var menuTemplate = $('#menuTpl').html();
+          var html = Mustache.to_html(menuTemplate, data);
+          $('#menu').html(html);
+
+          var boxTemplate = $('#boxTpl').html();
+          html = Mustache.to_html(boxTemplate, data);
+          $('section.boxes').html(html);
+        });
+        
+      });
+    </script>
+    <script id="menuTpl" type="text/template">
+      {{ #menus }} <li><a href="{{ url }}">{{ label }}</a></li> {{ /menus }}
+    </script>
+    <script id="boxTpl" type="text/template">
+      {{ #boxes }}
+        <div class="box">
+          <img src="{{ image-src }}" alt="{{ title }}" class="{{ class }}">
+          <h3>{{ title }}</h3>
+          <p>{{ text }}</p>
+        </div>
+      {{ /boxes }}
+    </script>
+  </head>
+
+ <body>
+  <header>
+    <main> 
+      <div class="logo">
+        <img src="img/cybercrime3.svg"  alt="Cybercrime Logo" class="img_1">
+      </div>
+
+      
+      <div class="menu">
+        <img src="img/menu.png" alt="Menu" onclick="menu()" class="img_1">
+        <ul id="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="ourwork.html">Our Work </a></li>
+          <li><a href="gethelp.html">Get Help</a></li>
+          <li><a href="reportcybercrime.html">Report Cybercrime </a></li>
+          <li><a href="contactus.html">Contact Us</a></li>
+          <li><a href="partners.html">Partners</a></li>
+        </ul>
+      </div>
+
+    </main>
+
+
+  </header>
+  <section class="container">
+    <h1>Cybercrime Prevention</h1>
+    <h3> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nulla augue, finibus ut ornare sed, porta in urna. Duis et sem magna. Aliquam erat volutpat. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed nec finibus tortor, id tincidunt quam. Morbi quis quam efficitur, dapibus erat nec, feugiat nisi. Vestibulum condimentum elit et porta molestie. Fusce dignissim purus ipsum. Vivamus eget justo tortor. Suspendisse justo arcu, vestibulum sit amet orci cursus, sodales gravida lorem. Vivamus ut nibh pretium orci ornare venenatis.</h3>
+
+    <div class="button">
+      <button>Join Us</button>
+      <button>Learn More</button>
+    </div>
+  </section>
+
+  <hr/>
+
+  <section  class="boxes">
+      
+  </section>
+
+  <footer>
+    <div class="footer">
+      <div class="foot">
+        <img src="img/cybercrime3.svg" alt="Logo" class="img_1">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis semper pharetra dui sed vulputate. Suspendisse feugiat diam dui, a consectetur mi interdum id</p>
+      </div>
+
+      <div class="foot"> 
+        <ul>
+          <li><a href="/">Donate</a></li>
+          <li><a href="/">Ways To Give</a></li>                         
+          <li><a href="/">Get Involved</a></li>
+          <li><a href="/">Subscribe</a></li>
+        </ul>
+      </div>
+      <div class="foot">
+          <ul>
+              <li><a href="/">Our Story</a></li>
+              <li><a href="/">Our Partners</a></li>                       
+              <li><a href="/">Meet Our Team</a></li>
+            </ul>
+      </div>
+      <div class="foot">
+          <ul>
+              <li><a href="/">Events</a></li>
+              <li><a href="/">News</a></li>
+              <li><a href="/">Contact Us</a></li>
+            </ul>
+      </div>
+    </div>
+   <p style="text-align: center; font-weight: bolder;">Cybercrime Prevention,  Copyright &copy; 2019</p>
+  </footer>
+
+  <script>
+    function menu(){
+      var x = document.getElementById("menu");
+      if(x.style.display==="none"){
+        x.style.display = "block";
+      }else{
+        x.style.display = "none";
+      }
+    }
+  </script>
+
+ </body>
+
+
+  
+</html>

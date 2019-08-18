@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cybercrime Prevention</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Cybercrime Support Network">
+    <meta name="keywords" content="cybercrime, fraud, scam, crime, cybersecurity">
+    <meta name="author" content="Chidimma Ibeh">
+    <link rel="stylesheet/less" type="text/css" href="css/styles.less" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.0.1/mustache.min.js" ></script>
+    <script>
+      $(document).ready(function () {
+        $.getJSON('data.json', function(data) {
+          var menuTemplate = $('#menuTpl').html();
+          var html = Mustache.to_html(menuTemplate, data);
+          $('#menu').html(html);
+        });
+        
+      });
+    </script>
+    <script id="menuTpl" type="text/template">
+      {{ #menus }} <li><a href="{{ url }}">{{ label }}</a></li> {{ /menus }}
+    </script>
+  </head>
+
+ <body>
+  <header>
+    <main> 
+      <div class="logo">
+        <img src="img/cybercrime3.svg"  alt="Cybercrime Logo" class="img_1">
+      </div>
+
+      
+      <div class="menu"> 
+          <img src="img/menu.png" alt="Menu" onclick="menu()">
+        <ul id="menu">
+            
+          </ul>
+        </div>
+
+    </main>
+
+
+  </header>
+  <section class="container">
+    <h1>Our Partners</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at augue metus. Sed a ligula id quam bibendum porta. Vestibulum ac mattis odio. Etiam turpis leo, mattis a tincidunt at, cursus ut massa. Sed posuere sem vitae erat tempor pharetra.</p>
+  
+  </section>
+  
+  <hr/>
+
+  <section>
+    <div class="w50">
+      <img src="img/cybercrime4.jpg" alt="Partners, Donors, and Volunteers"> 
+      
+    </div>
+    <div class="w50">
+      <h3>Partners #1</h3>
+      <h3>Partners #2</h3>
+      <h3>Parnters #3</h3>
+      <h3>Donors #1</h3>
+      <h3>Donors #2</h3>
+      <h3>Volunteers</h3>
+    </div>
+  </section>
+  
+
+  <footer>
+    <div class="footer">
+    <div class="foot">
+      <img src="img/cybercrime3.svg" alt="Logo" class="img_1"> 
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis semper pharetra dui sed vulputate. Suspendisse feugiat diam dui, a consectetur mi interdum id</p>
+    </div>
+
+    <div class="foot"> 
+      <ul>
+        <li><a href="/">Donate</a></li>
+        <li><a href="/">Ways To Give</a></li>                         
+        <li><a href="/">Get Involved</a></li>
+        <li><a href="/">Subscribe</a></li>
+      </ul>
+    </div>
+    <div class="foot">
+        <ul>
+            <li><a href="/">Our Story</a></li>
+            <li><a href="/">Our Partners</a></li>                       
+            <li><a href="/">Meet Our Team</a></li>
+          </ul>
+    </div>
+    <div class="foot">
+        <ul>
+            <li><a href="/">Events</a></li>
+            <li><a href="/">News</a></li>
+            <li><a href="/">Contact Us</a></li>
+          </ul>
+    </div>
+  </div>
+  <p style="text-align: center; font-weight: bolder;">Cybercrime Prevention,  Copyright &copy; 2019</p>
+  </footer>
+
+  <script>
+    function menu(){
+      var x = document.getElementById("menu");
+      if(x.style.display==="none"){
+        x.style.display = "block";
+      }else{
+        x.style.display = "none";
+      }
+    }
+  </script>
+
+ </body>
+
+
+  
+</html>

@@ -1,0 +1,49 @@
+ { 
+  "menus" : [ 
+    { 
+      "url" : "index.html",
+      "label" : "Home"
+    },
+    { 
+      "url" : "ourwork.html",
+      "label" : "Our Work"
+    },
+    { 
+      "url" : "gethelp.html",
+      "label" : "Get Help"
+    },
+    { 
+      "url" : "reportcybercrime.html",
+      "label" : "Report Cybercrime"
+    },
+    { 
+      "url" : "contactus.html",
+      "label" : "Contact Us"
+    },
+    { 
+      "url" : "partners.html",
+      "label" : "Partners"
+    }
+  ],
+  "boxes": [
+    {
+      "image-src": "img/cybercrime1.png",
+      "alt": "Victim Support",
+      "class": "img_1",
+      "title": "Victim Support",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis semper pharetra dui sed vulputate. Suspendisse feugiat diam dui, a consectetur mi interdum id"
+    },
+    {
+      "image-src": "img/cybercrime2.png",
+      "class": "img_1",
+      "title": "Partner Network",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis semper pharetra dui sed vulputate. Suspendisse feugiat diam dui, a consectetur mi interdum id"
+    },
+    {
+      "image-src": "img/cybercrime6.png",
+      "class": "img_1",
+      "title": "Volunteers",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis semper pharetra dui sed vulputate. Suspendisse feugiat diam dui, a consectetur mi interdum id"
+    }
+  ]
+}
