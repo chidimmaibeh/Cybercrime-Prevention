@@ -1,3 +1,3 @@
 # Cybercrime-Prevention
 
-A cybercrime prenention support web application for victims of cybercrime.
+It is a web application that assists and support those who are victims of cybercrime. 
